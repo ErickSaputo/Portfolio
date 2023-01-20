@@ -1,0 +1,175 @@
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.about-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 30%;
+    height: 500px;
+    min-width: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+//technologies
+.about-logo{
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    padding-right: 15%;
+    padding-left: 15%;
+    height: 500px;
+    align-items:center;
+    justify-content:flex-start;
+    ul{
+        display: grid;
+        grid-template-areas: 
+        "logo1    logo2    logo3"
+        "logo4     logo5   ....."
+        ;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+    }
+    li{
+        width: 80px;
+        height: 80px;
+        transition: ease 0.5s;
+        margin: 0.5rem;
+        
+    }
+
+}
+.word{
+    font-weight: 600;
+}
+.about-title{
+   display: grid;
+   justify-content: center;
+   padding: 1rem;
+   font-size: 2rem;
+   font-weight: 700;
+
+}
+._info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .language-container{
+        display: flex;
+        justify-content: center;
+    }
+    .skills-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+button{
+    color: rgb(3, 25, 84);
+    cursor: pointer;
+    background: rgb(212, 158, 19);
+    border: transparent;
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px rgb(5, 5, 49)  ,-5px -5px 15px rgb(32, 54, 114);
+    transition: ease-in 0.2s;
+    width: 120px;
+    padding: 2px;
+
+    }
+    button:hover{
+        background-color: rgb(240, 189, 61);
+        transition: ease-in 0.2s;
+    }
+.not-show{
+    display: none;
+    transition: all ease-in 4s;
+}
+.show{
+    margin-top: 30px;
+    padding: 1rem;
+    background: linear-gradient(145deg,rgb(5, 5, 72), rgb(11, 34, 97), );
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(2, 2, 30)  ,-5px -5px 15px rgb(19, 45, 116) ;
+    display: flex;
+
+    position: absolute;
+    flex-direction: row;
+    ul{
+        list-style: none;
+    }
+}
+
+
+//logos
+.java-logo{
+    background-image: url("../components/images/javascript-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo1 ;
+}
+.css-logo{
+    background-image: url("../components/images/css-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo2 ;
+}
+.react-logo{
+    background-image: url("../components/images/react-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo4 ;
+
+}
+.html-logo{
+    background-image: url("../components/images/html-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo3 ;
+}
+.sass-logo{
+    background-image: url("../components/images/sass-crop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: logo5 ;
+}
+
+//media Queries
+@media screen and (max-width: 768px){
+    .about{
+        height: 1000px;
+        grid-template-columns: 1fr;
+        .about-text{
+            height: 300px;
+            padding-right: 0%;
+            padding-left: 0%;
+        p{
+            width: 60%;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 768px){
+.about-logo{
+    padding-right: 0%;
+    padding-left: 0%;
+    height: 300px;
+    ul{
+    li{
+    width: 70px;
+    height: 70px;
+    transition: ease 0.5s;
+    }
+}
+}
+}

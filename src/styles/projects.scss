@@ -1,0 +1,142 @@
+.projects{
+    display:grid;
+    grid-template-rows: auto auto auto;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    transition: ease-in 0.5s;
+    [class^="project"] {
+        //Background effect
+        background: linear-gradient(145deg,rgb(4, 4, 54), rgb(3, 25, 84), );
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px rgb(4, 4, 81)  ,-5px -5px 15px rgb(17, 46, 126) ;
+        // Grid
+        transition: ease-in 0.5s;
+        display: grid;
+        grid-template-areas: 
+        "img   title   title"
+        "img   infor   infor"
+        "img   button  button"
+        ;
+        gap: 5px;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 3.5fr 1fr;
+
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+        height: 340px;
+        h1{
+            padding-top: 20px;
+            grid-area: title;
+            display: flex;
+            justify-content: center;
+            color: rgb(212, 158, 19);
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        
+        .text-container{
+            padding-left: 35px;
+            display: flex;
+            grid-area: infor;
+            .subtitle{
+                font-weight: 700;
+            }
+            .th-container{
+                display: flex;
+                justify-content: flex-start;
+                padding: 10px;
+            .text-high{
+                margin-right: 10px;
+                margin-left: -5px;
+                background: linear-gradient(145deg,rgb(106, 106, 132), rgb(74, 114, 235), );
+                border-radius: 5px;
+                font-size: 0.8rem;
+                color: rgb(11, 28, 74) ;
+                padding: 4px;
+                box-shadow: 3px 3px 10px rgb(2, 2, 30)  ,-5px -5px 15px rgb(19, 45, 116) ;
+            }
+        }
+        }
+        .img-container{
+            display: flex;
+            grid-area: img;
+            justify-content: center;
+            align-items: center;
+            img{
+            margin-top: 25px;
+            width: 80%;
+            border-radius: 10px;
+
+        }
+    }
+        .button_container{
+            grid-area: button;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            button{
+                box-shadow: 5px 5px 15px rgb(2, 2, 36)  ,-5px -5px 15px rgb(22, 44, 105);
+                color: rgb(3, 25, 84);
+                cursor: pointer;
+                background: rgb(212, 158, 19);
+                border: transparent;
+                border-radius: 7px;
+                transition: ease-in 0.1s;
+                width: 100px;
+                padding: 2px;
+                }
+                button:hover{
+                    background-color: rgb(243, 202, 100);
+                    transition: ease-in 0.1s;
+                }
+        }
+        }
+
+        
+    }
+
+@media screen and (max-width: 768px) {
+    .projects {
+        width: 100%;
+        height: 1900px;
+        transition: ease-in 0.5s;
+        [class^="project"] {
+            max-width: 400px;
+            transition: ease-in 0.5s;
+        grid-template-areas: 
+        "title"
+        "infor"
+        "img"
+        "button"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 6fr 1fr ;
+        height: 550px;
+        h1{
+            font-size: 2rem;
+        }
+        .text-container{
+            p{
+                padding: 35px;
+            }
+        }
+        .img-container{
+        img{
+            max-width: 200px;
+        }
+    }}
+}
+}
+@media screen and (max-width: 500px) {
+    .projects {
+        [class^="project"] {
+            max-width: 350px;
+            transition: ease-in 1s;
+        }
+    }
+}

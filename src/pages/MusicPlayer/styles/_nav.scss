@@ -1,0 +1,35 @@
+
+    .music-nav {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        color: rgb(9, 21, 56);
+        font-size: 2rem;
+        
+    }
+    button{
+        z-index: 20;
+        background: transparent;
+        border:  none;
+        cursor: pointer;
+        color: rgb(79, 88, 111);
+        border: 1px solid rgb(79, 88, 111);
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+        &:hover {
+            background: rgb(35, 50, 90);
+            color: white;
+        }
+    }
+}
+
+
+// @media screen and (max-width: 768px) {
+//     nav{
+//         button {
+//             z-index: 20;
+//         }
+//     }
+// }

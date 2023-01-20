@@ -1,0 +1,198 @@
+.main-nav {
+    width: 100%;
+    height: 5em;
+    background-color: rgb(5, 22, 70);
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 95%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+    position:fixed;
+}
+
+.landing-links {
+    ul {
+        top: 60px;
+        right: -30px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        list-style: none;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    li a {
+        text-decoration: none;
+        padding: 1rem ;
+        color: white;
+        text-align: center;
+        transition: ease 0.1s;
+
+    }
+
+    li a:hover {
+        transition: ease 0.1s;
+        color: rgb(243, 202, 100);
+    }
+}
+
+.navbar-links {
+    ul {
+    display: flex;
+    padding: 2rem;
+
+    }
+    li {
+    list-style: none;
+    }
+    
+    }
+    li a{
+        text-decoration: none;
+        display: flex;
+        transition: ease-in 0.1s;
+        font-weight: 400;
+    }
+    li svg{
+        padding: 1rem;
+    }
+    li svg:hover {
+        color: rgb(243, 202, 100);
+        transition: ease-in 0.1s;
+
+    }
+
+
+// ...... Burger Menu ..........
+.burger-menu {
+    height: 100%;
+    width: 3em;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.burger-bar {
+    width: inherit;
+    height: 0.4em;
+    background-color: rgb(212, 158, 19);
+    border-radius: 0.5em;
+}
+
+.menu {
+    width: 15%;
+    height: auto;
+    background-color: rgb(5, 22, 70);
+    opacity: 95%;
+    box-shadow: 1px 5px 8px 3px rgba(0,0,0,.8);
+    position: fixed;
+    border-radius: 10%;
+    top: 80px;
+    left: 85%;
+    transition: all 0.5s ease;
+
+    
+}
+
+//sliding menu
+.hidden{
+    transform: translateX(100%);
+    opacity: 0%;
+    transition: all 0.5s ease;
+}
+.visible {
+    transition: all 0.5s ease;
+    display: inherit;
+}
+
+//animations 
+//clicked
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.45em, 0.75em);
+    transition: ease-out 0.5s;
+}
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.01);
+    transition: ease-out 0.5s;
+}
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.4em, 0.75em);
+    transition: ease-out 0.5s;
+}
+
+//unclicked
+.burger-bar.unclicked{
+transform: rotate(0) translate(0);
+transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.burger-bar.unclicked:hover{
+    background-color: rgb(243, 202, 100) ;
+}
+
+
+.nav-logo{
+    background-image: url("../components/images/Mostaza-crop.png");
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 16%;
+}
+
+.home-button{
+    a{
+    transition: ease-in 0.2s;
+    }
+    svg{
+        padding: 1rem;
+    }
+    svg:hover {
+    color: rgb(240, 189, 61);
+    transition: ease 0.2s;
+
+}
+}
+@media screen and (max-width: 768px){
+    .navbar {
+        width: 50%;
+        }
+    }
+    @media screen and (max-width: 768px){
+    .menu{
+        width: 150px;
+        left: 75%;
+        }
+    .landing-links {
+        ul {
+
+            li{
+                a{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .menu{
+        width: 150px;
+        left: 65%;
+        }
+    }
+    @media screen and (max-width: 450px){
+        .menu{
+            width: 150px;
+            left: 60%;
+            }
+        }
