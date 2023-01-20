@@ -19,7 +19,6 @@ import ContactForm from "./components/contactme";
 function App() {
   const myRef = useRef();
   const [myElementIsVisible, setMyElementIsVisible] = useState();
-console.log("myElementIsVisible", myElementIsVisible);
 
 const callbackFunction = (entries) => {
   const entry = entries[0];
