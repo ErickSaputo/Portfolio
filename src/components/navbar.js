@@ -67,19 +67,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-
-        {/* <div className="home-button"><a href="#landing"><FontAwesomeIcon 
-        icon={faHouse} 
-        color="rgb(212, 158, 19)"
-        size="xl"
-        /></a>
-        </div>
-        <div className="nav-logo"></div>
-        <div className="navbar-links">
-          <ul>
-            <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ericksaputo/"><FontAwesomeIcon icon={faLinkedin} 
-            color="rgb(212, 158, 19)" size="xl" /></a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/ErickSaputo"><FontAwesomeIcon icon={faGithub} color="rgb(212, 158, 19)"  size="xl" /></a></li>
-          </ul>
-        </div> */}
