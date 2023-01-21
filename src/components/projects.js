@@ -38,7 +38,7 @@ const Projects = () => {
                   </div>
                   </div>
                 </div>
-              <div className="img-container"><img src={musicImg}/></div>
+              <div className="img-container" alt="An img of the music playe project"><img src={musicImg}/></div>
               <div className="button_container">
               <Link to="/musicplayer">
               <button>Live</button>
@@ -78,7 +78,7 @@ const Projects = () => {
                   </div>
                   </div>
                 </div>
-              <div className="img-container"><img src={weatherImg}/></div>
+              <div className="img-container" alt="An img the weather project" ><img src={weatherImg}/></div>
               <div className="button_container">
               <Link to="/weather">
               <button>Live</button>
@@ -115,12 +115,12 @@ const Projects = () => {
                   </div>
                   </div>
                 </div>
-              <div className="img-container"><img src={todoImg} /></div>
+              <div className="img-container" alt="An img the todo project"><img src={todoImg} /></div>
               <div className="button_container">
-              <a target="_blank" href="https://ericksaputo.github.io/todoApp/todoAppOG/">
+              <a target="_blank" rel="noreferrer"  href="https://ericksaputo.github.io/todoApp/todoAppOG/">
               <button>Live</button>
               </a>
-              <a target="_blank" href="https://github.com/ErickSaputo/todoApp/tree/main/todoAppOG">
+              <a target="_blank" rel="noreferrer"  href="https://github.com/ErickSaputo/todoApp/tree/main/todoAppOG">
               <button>Source</button>
               </a>
               </div>

@@ -41,7 +41,8 @@ const options = {
       </div>
       <Router>
         <Routes>
-          <Route path="/" element= { <div className="main-app">  
+          <Route path="erick-porfolio" element= { 
+          <div className="main-app">  
           <Landing/>
           <div ref={myRef} className={`${myElementIsVisible ? "info-visible" : "info-hidden"}`}>
           <About/>
