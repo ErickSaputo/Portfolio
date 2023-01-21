@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect}from "react";
 import "./styles/app.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 
 
 // import projects
@@ -37,11 +37,10 @@ const options = {
   return (
     <div >
       <div>
-      < Navbar />
+      < Navbar/>
       </div>
-      <Router>
         <Routes>
-          <Route path="/Portfolio" element= { 
+          <Route path="/" element= { 
           <div className="main-app">  
           <Landing/>
           <div ref={myRef} className={`${myElementIsVisible ? "info-visible" : "info-hidden"}`}>
@@ -50,10 +49,9 @@ const options = {
           <ContactForm/>
           </div>
           </div> } />
-          <Route  path="/MusicPlayer" element= { <div ref={myRef}>< MusicPLayer  /></div> } />
+          <Route path="/MusicPlayer" element= { <div ref={myRef}>< MusicPLayer  /></div> } />
           <Route path="/Weather" element= { <div ref={myRef} ><WeatherApp/></div>  } />
         </Routes>
-      </Router>
     </div> 
   );
 }
