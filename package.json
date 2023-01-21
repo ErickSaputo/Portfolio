@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ericksaputo.github.io/Portfolio",
   "name": "erick-portfolio",
+  "homepage": "https://ericksaputo.github.io/Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
