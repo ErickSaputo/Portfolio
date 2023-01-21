@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
           <nav className='main-nav'>
-          <div className="home-button"><a href="/erick-porfolio/#landing"><FontAwesomeIcon 
+          <div className="home-button"><a href="/Portfolio/#landing"><FontAwesomeIcon 
         icon={faHouse} 
         color="rgb(212, 158, 19)"
         size="2x"
@@ -56,9 +56,9 @@ const Navbar = () => {
           <div className={menu_class}>
           <div className="landing-links">
             <ul>
-            <li><a href="/erick-porfolio/#about" onClick={updateMenu}>About</a></li>
-            <li><a href="/erick-porfolio/#projects" onClick={updateMenu}>Projects</a></li>
-            <li><a href="/erick-porfolio/#contact-me" onClick={updateMenu}>Contact Me</a></li>
+            <li><a href="/Portfolio/#about" onClick={updateMenu}>About</a></li>
+            <li><a href="/Portfolio/#projects" onClick={updateMenu}>Projects</a></li>
+            <li><a href="/Portfolio/#contact-me" onClick={updateMenu}>Contact Me</a></li>
            </ul> 
         </div>
           </div>
