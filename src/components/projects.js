@@ -38,14 +38,14 @@ const Projects = () => {
                   </div>
                   </div>
                 </div>
-              <div className="img-container" alt="An img of the music playe project"><img src={musicImg}/></div>
+              <div className="img-container" ><img src={musicImg} alt="An img of the music playe project"/></div>
               <div className="button_container">
               <Link to="/musicplayer">
               <button>Live</button>
               </Link>
-              <Link to="/">
+              <a target="_blank" rel="noreferrer"  href="https://github.com/ErickSaputo/Portfolio/tree/main/src/pages/MusicPlayer">
               <button>Source</button>
-              </Link>
+              </a>
               </div>
             </div>
             {/* //2nd Project */}
@@ -78,14 +78,14 @@ const Projects = () => {
                   </div>
                   </div>
                 </div>
-              <div className="img-container" alt="An img the weather project" ><img src={weatherImg}/></div>
+              <div className="img-container"  ><img src={weatherImg} alt="An img the weather project" /></div>
               <div className="button_container">
               <Link to="/weather">
               <button>Live</button>
               </Link>
-              <Link to="/">
+              <a target="_blank" rel="noreferrer"  href="https://github.com/ErickSaputo/Portfolio/tree/main/src/pages/WeatherApp">
               <button>Source</button>
-              </Link>
+              </a>
               </div>
             </div>
             {/* //3rd Project */}
@@ -115,7 +115,7 @@ const Projects = () => {
                   </div>
                   </div>
                 </div>
-              <div className="img-container" alt="An img the todo project"><img src={todoImg} /></div>
+              <div className="img-container" ><img src={todoImg} alt="An img the todo project" /></div>
               <div className="button_container">
               <a target="_blank" rel="noreferrer"  href="https://ericksaputo.github.io/todoApp/todoAppOG/">
               <button>Live</button>

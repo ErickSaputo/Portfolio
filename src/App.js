@@ -27,7 +27,8 @@ const callbackFunction = (entries) => {
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.10,}
+  threshold: 0.08,
+}
 
   useEffect(() => {
     const observer = new IntersectionObserver (callbackFunction, options );

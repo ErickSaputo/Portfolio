@@ -37,8 +37,6 @@ const About = () => {
         <div className="about" id="about">
             <div className="about-text">
                 <span className="about-title">Who am I</span>
-                <br></br>
-                <br></br>
                 <p>Life is always brighter if you see it from the right point of view! it's all about perspective.
                 <br></br>
                 <br></br>
